@@ -1,0 +1,112 @@
+{% extends "app/base.html" %}{% load static %}{% block title %}
+<title>Wildlife</title>
+{% endblock title %} {% block content %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'app/images/nature.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h4>
+                    <span class="one">Zuru </span> <span class="two">Kenya</span>
+                </h4>
+                <p class="lorem">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="listings">
+    <div class="container">
+        <div class="text-center">
+            <h4 class="listings">
+                <span class="one">What Makes Kenya</span> <span class="two">Unique</span>
+            </h4>
+        </div>
+        <div class="row mt-10">
+            <div class="col-md-4">
+                <h6 class="mb-3">The Big Five </h6>
+                <div class="card p-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">Lion</li>
+                        <li class="list-group-item">Rhino</li>
+                        <li class="list-group-item">Elephant</li>
+                        <li class="list-group-item">Buffalo</li>
+                        <li class="list-group-item">Leopard</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h6 class="mb-3">Amazing Tourism Sites </h6>
+                <div class="card p-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">Masai Mara National Reserve</li>
+                        <li class="list-group-item">Amboseli National Park</li>
+                        <li class="list-group-item">Tsavo National Parks</li>
+                        <li class="list-group-item">Lake Nakuru National Park</li>
+                        <li class="list-group-item">The Great Rift Valley</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h6 class="mb-3">Our Cultures </h6>
+                <div class="card p-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">Kikuyu</li>
+                        <li class="list-group-item">Maasai</li>
+                        <li class="list-group-item">Luo</li>
+                        <li class="list-group-item">Kisii</li>
+                        <li class="list-group-item">Luhya</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="text-center">
+        <h4 class="listings">
+            <span class="one"> A Demo Of</span> <span class="two">The Big Five</span>
+        </h4>
+    </div>
+
+    <div class="row mygallery">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{% static 'app/images/leopard.jpg' %}" class="image-fluid gallery">
+
+                </div>
+                <div class="col-md-12">
+                    <img src="{% static 'app/images/elephant.jpg' %}" class="image-fluid gallery">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{% static 'app/images/lion2.jpg' %}" class="image-fluid gallery lion">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{% static 'app/images/buffalo.jpg' %}" class="image-fluid gallery">
+
+                </div>
+                <div class="col-md-12">
+                    <img src="{% static 'app/images/rhino.jpg' %}" class="image-fluid gallery">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}

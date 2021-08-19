@@ -1,0 +1,200 @@
+{% extends "app/base.html" %} {% load static %}{% block title %}
+<title>Home</title>
+{% endblock title %} {% block content %}
+<video controls autoplay>
+    <source class="video-fluid" src="{% static 'app/polina.mp4' %}" type="video/mp4">
+    
+  Your browser does not support the video tag.
+  </video>
+<div class="container">
+    <div class="text-center message">
+        <h4>
+            <span class="one">Kenya's </span> <span class="two">Magic</span>
+        </h4>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header p-0">
+                    <img src="{% static 'app/images/lion.jpg' %}" alt="" class="img-fluid card-img-top">
+                </div>
+                <div class="card-body">
+                    <h5>Wildlife</h5>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing.</h6>
+                    <a href="{% url 'home' %}" class="btn mt-3 mb-3">Read More...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header p-0">
+                    <img src="{% static 'app/images/marine3.jpg' %}" alt="" class="img-fluid card-img-top">
+
+                </div>
+                <div class="card-body">
+                    <h5>Marine</h5>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing.</h6>
+                    <a href="{% url 'home' %}" class="btn mt-3 mb-3">Read More...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header p-0">
+                    <img src="{% static 'app/images/culture2.jpg' %}" alt="" class="img-fluid card-img-top">
+
+                </div>
+                <div class="card-body">
+                    <h5>Culture</h5>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing.</h6>
+                    <a href="{% url 'home' %}" class="btn mt-3 mb-3">Read More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="parralax">
+    <div class="row ">
+        <div class="col-md-4">
+            <img src="{% static 'app/images/trulyafrican.jpg' %}" alt="" class="img-fluid image">
+        </div>
+        <div class="col-md-7">
+
+            <p class="text-one">
+                What about Kenya??
+            </p>
+            <h4>
+                <span class="one">Get to know more  </span> <span class="two">About Us</span>
+            </h4>
+            <p class="text-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aut expedita, nemo officiis ipsam necessitatibus iste maiores harum, mollitia iusto ad saepe, ut alias praesentium. Nam distinctio expedita veniam hic.
+            </p>
+            <p class="text-light">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolorem culpa ullam laudantium sequi, ab velit excepturi rerum atque accusamus ea beatae eos! Beatae ducimus magni facere explicabo facilis. Necessitatibus?
+            </p>
+            <a href="{% url 'home' %}" class="btn mt-3 mb-3">Read More...</a>
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h4 class="text-center">
+        <span class="one">Read about our  </span> <span class="two">Blog</span>
+    </h4>
+    <div class="row mt-60">
+        <div class="col-md-4">
+            <div class="blog">
+                <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet fugit ea fuga veniam labore iusto. Lorem ipsum dolor sit amet.</h6>
+                <p class="mt-3 text-muted">Kenya | Today's daily</p>
+            </div>
+            <div class="blog">
+                <h6 class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet fugit ea fuga veniam labore iusto. Lorem ipsum dolor sit amet.</h6>
+                <p class="mt-3 text-light">Kenya | Today's daily</p>
+            </div>
+            <div class="blog">
+                <h6 class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet fugit ea fuga veniam labore iusto. Lorem ipsum dolor sit amet.</h6>
+                <p class="mt-3 text-light">Kenya | Today's daily</p>
+            </div>
+            <div class="button">
+                <a href="{% url 'home' %}" class="btn mt-3 mb-3">Read More...</a>
+
+            </div>
+        </div>
+        <div class="col-md-8">
+            <img src="{% static 'app/images/curve2.jpg' %}" alt="" class="img-fluid">
+            <h6 class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eos.</h6>
+            <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quia molestiae laudantium nisi! Quo, distinctio repellendus quaerat accusamus rem, totam sed enim illum consectetur officiis sunt excepturi. A, assumenda alias.
+            </p>
+            <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, omnis.
+            </p>
+
+        </div>
+    </div>
+</div>
+<div class="about">
+    <div class="conatiner">
+        <div class="text-center">
+            <h4>
+                <span class="one">Kenyan's Reviews</span> <span class="two">About Us</span>
+            </h4>
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="container">
+            <div class="row mt-20">
+                <div class="col-md-6">
+                    <div class="card p-2">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h6>Multimedia Presentation</h6>
+                                <p class="brown">Testimonial One</p>
+                            </div>
+                            <p class="text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis similique omnis dolorem culpa laboriosam commodi dolorum a ipsum facilis minima voluptatibus, aperiam dicta harum consectetur nulla id repellendus. Reprehenderit,
+                                ipsam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-2">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h6>Multimedia Presentation</h6>
+                                <p class="brown">Testimonial Two</p>
+                            </div>
+                            <p class="text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis similique omnis dolorem culpa laboriosam commodi dolorum a ipsum facilis minima voluptatibus, aperiam dicta harum consectetur nulla id repellendus. Reprehenderit,
+                                ipsam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-40">
+    <div class="container">
+        <div class="text-center">
+            <h4>
+                <span class="one">Send Us</span> <span class="two">Your Feedback</span>
+            </h4>
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="myform">
+            <div class="container">
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="name">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="email">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="subject">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <textarea name="" id="textarea" placeholder="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="" class="btn mt-3 mb-3 btn-light pl-5 pr-5">SEND MESSAGE</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
