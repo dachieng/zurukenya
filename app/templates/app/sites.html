@@ -1,0 +1,52 @@
+{% extends "app/base.html" %}{% load static %}{% block title %}
+<title>Wildlife</title>
+<style>
+    .card {
+        min-height: 300px !important;
+    }
+</style>
+{% endblock title %} {% block content %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'app/images/mara.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>
+                    <span class="one">Kenya</span> <span class="two"></span>
+                </h1>
+                <p class="lorem text-dark">East African nation with Maasai Mara wildlife safaris, Mt. Kenya, capital Nairobi & beaches.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="listings">
+    <div class="container">
+        <h4> <span class="one">Top</span> <span class="two">Sights</span>
+        </h4>
+        <p><small class="text-muted">Based on traveller visits and local insights</small></p>
+
+        <div class="row mt-2">
+            {% for site in sites %}
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header p-0">
+                        <img src="{{site.image.url}}" alt="" class="img-fluid card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="brown">
+                            {{site.title}}
+                        </h6>
+                        <div class="row">
+                            <p>{{site.summary}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% endblock %}

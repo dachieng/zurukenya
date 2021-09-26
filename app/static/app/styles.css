@@ -142,12 +142,13 @@ div.parralax {
 }
 
 .img.image-fluid.gallery {
-    transition: 500ms linear;
+    transition: 0.3s;
     /* Animation */
 }
 
 img.image-fluid.gallery:hover {
     transform: scale(1.1);
+    /*translate: z-;*/
 }
 
 img.image-fluid.gallery.lion {

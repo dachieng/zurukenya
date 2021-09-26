@@ -17,3 +17,9 @@ class Trips(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Sites(models.Model):
+    image = models.ImageField(upload_to="pics")
+    title = models.CharField(max_length=400)
+    summary = models.CharField(max_length=400)

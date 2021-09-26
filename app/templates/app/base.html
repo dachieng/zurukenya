@@ -38,6 +38,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'trips' %}">Trips</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'sites' %}">Sites</a>
+                        </li>
+                        <li class="nav-item">
+                            <form class="ml-4 mt-2" name="myform" method="GET" action="{% url 'search' %}">
+                                <input type="text" name="search" placeholder="Search" /></form>
+                        </li>
                     </ul>
 
                 </div>
@@ -75,7 +82,7 @@
                 </div>
                 <div class="col-md-4">
                     <h6 class="text-center">About Kenya</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore aliquid corporis deleniti suscipit officiis ipsam dolores dicta illo vel alias possimus commodi, facilis nisi provident, odit repudiandae ex? Maxime, reprehenderit.
+                    <p>Kenya is a country in East Africa with coastline on the Indian Ocean. It encompasses savannah, lakelands, the dramatic Great Rift Valley and mountain highlands. It's also home to wildlife like lions, elephants and rhinos.
                     </p>
                 </div>
                 <div class="col-md-4">
@@ -84,7 +91,7 @@
                         <p><small><a class="nav-link text-light" href="{% url 'home' %}">Home</a></small></p>
                         <p><small><a class="nav-link text-light" href="{% url 'wildlife' %}">Wildlife</a></small></p>
                         <p><small><a class="nav-link text-light" href="trips">Trips</a></small></p>
-                        <p><small><a class="nav-link text-light" href="">Resorts</a></small></p>
+                        <p><small><a class="nav-link text-light" href="">Culture</a></small></p>
                     </div>
                 </div>
             </div>
@@ -92,6 +99,7 @@
         <hr class="hr">
         <div class="row col-md-12 text-center mt-3">
             <a class="navbar-brand" href="{% url 'home' %}">Zuru Kenya~</a>
+            <p>+254&nbsp;765217861</p>
             <p><small>&copy;kenya</small></p>
         </div>
     </footer>

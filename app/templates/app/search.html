@@ -1,0 +1,50 @@
+{% extends "app/base.html" %} {% load static %} {% block title %}
+<title>Search</title>
+{% endblock title %} {% block content %} {% if trips %}
+<div class="container">
+    <div class="text-center">
+        <h4 class="trips">
+            <span class="one"> Your </span> <span class="two">Search</span>
+        </h4>
+    </div>
+
+    <div class="row mt-2">
+        {% for trip in trips %}
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header p-0">
+                    <img src="{{trip.image.url}}" alt="" class="img-fluid card-img-top">
+                </div>
+                <div class="card-body">
+                    <h6 class="brown">
+                        {{trip.title}}
+                    </h6>
+                    <p class="text-primary"><small>{{trip.destination1}} &gt; {{trip.destination2}} &gt; </small></p>
+                    <p class="text-primary"><small>{{trip.destination3}} &gt; {{trip.destination4}} &gt; {{trip.destination4}}</small> </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <small>{{trip.duration}} DAYS</small>
+                        </div>
+                        <div class="col-md-4">
+                            <small>SH {{trip.amount}}</small>
+                        </div>
+                        {% if trip.offer %}
+
+                        <div class="col-md-4">
+
+                            <button class="btn btn-outline-primary btn-sm">Offers</button>
+
+                        </div>
+
+                        {% endif %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+{% endif %} {% endblock %}
